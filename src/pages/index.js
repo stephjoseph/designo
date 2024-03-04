@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
+import Seo from '../components/Seo';
 
 const Home = () => {
   return (
@@ -10,5 +11,7 @@ const Home = () => {
     </Layout>
   );
 };
+
+export const Head = () => <Seo title='Home' />;
 
 export default Home;
