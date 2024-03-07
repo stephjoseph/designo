@@ -1,0 +1,67 @@
+.home-hero {
+  margin-bottom: 120px;
+}
+
+.home-hero .home-hero-container {
+  padding: 80px 24px 451px;
+  background: var(--peach);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-image: url('../../images/home/desktop/bg-pattern-hero-home.svg');
+  background-repeat: no-repeat;
+  background-size: 640px 640px;
+  background-position: right -265px center;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.home-hero .home-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
+.home-hero .home-hero-content h1 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 0;
+  color: var(--white);
+  text-align: center;
+}
+
+.home-hero .home-hero-content p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0;
+  color: var(--white);
+  text-align: center;
+}
+
+.home-hero a {
+  background: var(--white);
+  padding: 18px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: var(--dark-grey);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.home-hero .home-hero-phone-img {
+  position: absolute;
+  bottom: -202px;
+  width: 284px;
+  height: 573px;
+  filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.5));
+}
