@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Web Design",
+    "slug": "web-design",
+    "image": {
+      "desktop": "../images/home/desktop/image-web-design.jpg",
+      "tablet": "../images/home/tablet/image-web-design.jpg",
+      "mobile": "../images/home/mobile/image-web-design.jpg"
+    }
+  },
+  {
+    "title": "App Design",
+    "slug": "app-design",
+    "image": {
+      "desktop": "../images/home/desktop/image-app-design.jpg",
+      "tablet": "../images/home/tablet/image-app-design.jpg",
+      "mobile": "../images/home/mobile/image-app-design.jpg"
+    }
+  },
+  {
+    "title": "Graphic Design",
+    "slug": "graphic-design",
+    "image": {
+      "desktop": "../images/home/desktop/image-graphic-design.jpg",
+      "tablet": "../images/home/tablet/image-graphic-design.jpg",
+      "mobile": "../images/home/mobile/image-graphic-design.jpg"
+    }
+  }
+]
