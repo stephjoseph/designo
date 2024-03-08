@@ -1,0 +1,45 @@
+.home-services {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  padding: 0px 24px;
+  margin-bottom: 120px;
+}
+
+.home-services .home-services-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 90px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  border-radius: 15px;
+}
+
+.home-services .home-services-service h2 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 1.4px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.home-services .home-services-service a {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  color: var(--white);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
