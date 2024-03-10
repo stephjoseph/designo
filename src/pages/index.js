@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import HomeHero from '../components/HomeHero';
 import HomeServices from '../components/HomeServices';
+import HomeQualities from '../components/HomeQualities';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <main>
         <HomeHero />
         <HomeServices />
+        <HomeQualities />
       </main>
     </Layout>
   );

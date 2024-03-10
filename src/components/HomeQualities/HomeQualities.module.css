@@ -1,0 +1,40 @@
+.home-qualities {
+  padding: 0 24px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.home-qualities .home-qualities-quality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.home-qualities .home-qualities-quality-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.home-qualities .home-qualities-quality-content h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--dark-grey);
+  text-align: center;
+}
+
+.home-qualities .home-qualities-quality-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0;
+  color: var(--dark-grey);
+  text-align: center;
+}
