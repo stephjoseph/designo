@@ -4,6 +4,7 @@ import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import ServicesHero from '../components/ServicesHero';
 import ServicesProjects from '../components/ServicesProjects';
+import ServicesNavigation from '../components/ServicesNavigation';
 
 const Service = ({ data }) => {
   return (
@@ -11,6 +12,7 @@ const Service = ({ data }) => {
       <main>
         <ServicesHero data={data.servicesJson} />
         <ServicesProjects data={data.servicesJson} />
+        <ServicesNavigation id={data.servicesJson.id} />
       </main>
     </Layout>
   );
@@ -30,6 +32,7 @@ export const query = graphql`
         title
         description
       }
+      id
     }
   }
 `;
