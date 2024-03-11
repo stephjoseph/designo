@@ -3,12 +3,14 @@ import { graphql } from 'gatsby';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import ServicesHero from '../components/ServicesHero';
+import ServicesProjects from '../components/ServicesProjects';
 
 const Service = ({ data }) => {
   return (
     <Layout>
       <main>
         <ServicesHero data={data.servicesJson} />
+        <ServicesProjects data={data.servicesJson} />
       </main>
     </Layout>
   );
