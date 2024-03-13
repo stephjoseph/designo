@@ -1,28 +1,24 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import {
   aboutHero,
   aboutHeroImage,
   aboutHeroContent,
 } from './AboutHero.module.css';
 
-const AboutHero = () => {
+const AboutHero = ({ data }) => {
+  const imageMobile = getImage(data.image.mobile);
   return (
     <section className={aboutHero}>
-      <StaticImage
-        src='../../images/about/mobile/image-about-hero.jpg'
+      <GatsbyImage
+        image={imageMobile}
         alt='people working together with their laptops on a table'
         className={aboutHeroImage}
       />
+
       <div className={aboutHeroContent}>
-        <h1>About Us</h1>
-        <p>
-          Founded in 2010, we are a creative agency that produces lasting
-          results for our clients. We’ve partnered with many startups,
-          corporations, and nonprofits alike to craft designs that make real
-          impact. We’re always looking forward to creating brands, products, and
-          digital experiences that connect with our clients’ audiences.
-        </p>
+        <h1>{data.title}</h1>
+        <p>{data.description}</p>
       </div>
     </section>
   );
