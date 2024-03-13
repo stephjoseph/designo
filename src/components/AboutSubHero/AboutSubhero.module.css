@@ -1,8 +1,9 @@
-.about-subsubhero {
+.about-subhero {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
+  margin-bottom: 120px;
 }
 
 .about-subhero .about-subhero-image {
