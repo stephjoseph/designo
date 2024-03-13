@@ -1,0 +1,14 @@
+[
+  {
+    "country": "Canada",
+    "illustration": "../images/shared/desktop/illustration-canada.svg"
+  },
+  {
+    "country": "Australia",
+    "illustration": "../images/shared/desktop/illustration-australia.svg"
+  },
+  {
+    "country": "United Kingdom",
+    "illustration": "../images/shared/desktop/illustration-united-kingdom.svg"
+  }
+]

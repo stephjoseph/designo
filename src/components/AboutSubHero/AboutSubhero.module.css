@@ -1,0 +1,43 @@
+.about-subhero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.about-subhero .about-subhero-image {
+  width: 100%;
+}
+
+.about-subhero .about-subhero-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: #fdf3f0;
+  background-image: url('../../images/shared/desktop/bg-pattern-three-circles.svg');
+  background-repeat: no-repeat;
+  background-size: 584px 584px;
+  background-position: top left;
+  padding: 80px 24px;
+}
+
+.about-subhero .about-subhero-content h1 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 0;
+  color: var(--peach);
+  text-align: center;
+}
+
+.about-subhero .about-subhero-content p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0;
+  color: var(--dark-grey);
+  text-align: center;
+}

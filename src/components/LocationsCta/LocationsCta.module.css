@@ -1,0 +1,46 @@
+.locations-cta {
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 120px;
+}
+
+.locations-cta .locations-cta-country {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.locations-cta .locations-cta-country-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.locations-cta .locations-cta-country-content h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--dark-grey);
+}
+
+.locations-cta .locations-cta-country-content a {
+  padding: 18px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+  background: var(--peach);
+  border-radius: 8px;
+  text-decoration: none;
+}
