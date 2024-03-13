@@ -3,12 +3,15 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import AboutHero from '../components/AboutHero';
 import { graphql } from 'gatsby';
+import AboutSubHero from '../components/AboutSubHero';
 
 const About = ({ data }) => {
   return (
     <Layout>
       <main>
         <AboutHero data={data.aboutJson.hero} />
+        <AboutSubHero data={data.aboutJson.subhero[0]} />
+        <AboutSubHero data={data.aboutJson.subhero[1]} />
       </main>
     </Layout>
   );
