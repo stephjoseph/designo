@@ -38,7 +38,11 @@ const LocationsLocations = () => {
       <h1>Locations</h1>
 
       {data.allLocationsJson.nodes.map((item) => (
-        <div key={item.id} className={locationsLocationsLocation}>
+        <div
+          key={item.id}
+          className={locationsLocationsLocation}
+          id={item.country}
+        >
           <MapContainer
             style={{ height: '326px' }}
             center={[item.lat, item.long]}
