@@ -1,0 +1,72 @@
+.locations-locations {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.locations-locations h1 {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden;
+}
+
+.locations-locations .locations-locations-location {
+  width: 100%;
+}
+
+.locations-locations .locations-locations-content {
+  padding: 80px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: #fdf3f0;
+  background-image: url('../../images/shared/desktop/bg-pattern-three-circles.svg');
+  background-repeat: no-repeat;
+  background-size: 584px 584px;
+  background-position: top left;
+}
+
+.locations-locations .locations-locations-content h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 0;
+  color: var(--peach);
+}
+
+.locations-locations address {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 24px;
+}
+
+.locations-locations address div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.locations-locations address div strong {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0;
+  color: var(--dark-grey);
+  font-style: normal;
+}
+
+.locations-locations address div span {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0;
+  color: var(--dark-grey);
+  font-style: normal;
+}
