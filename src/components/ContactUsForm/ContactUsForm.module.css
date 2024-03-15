@@ -1,0 +1,94 @@
+.contact-us-form {
+  padding: 72px 24px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 48px;
+  background-color: var(--peach);
+  background-image: url('../../images/contact/mobile/bg-pattern-hero-contact-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: 876px 990px;
+  background-position: top left -92px;
+}
+
+.contact-us-form .contact-us-form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 24px;
+}
+
+.contact-us-form .contact-us-form-content h1 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 0;
+  color: var(--white);
+  text-align: center;
+}
+
+.contact-us-form .contact-us-form-content p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0;
+  color: var(--white);
+  text-align: center;
+}
+
+.contact-us-form .contact-us-form-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.contact-us-form .contact-us-form-form-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 24px;
+}
+
+.contact-us-form .contact-us-form-form input:focus,
+textarea:focus,
+button:focus {
+  outline: 0;
+}
+
+.contact-us-form .contact-us-form-form input,
+textarea {
+  border: 0;
+  border-bottom: 1px solid var(--white);
+  background: 0;
+  padding: 0 0 12px 12px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0;
+  color: var(--white);
+}
+
+.contact-us-form .contact-us-form-form input::placeholder,
+textarea::placeholder {
+  opacity: 0.5;
+}
+
+.contact-us-form .contact-us-form-form button {
+  border: 0;
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--dark-grey);
+  padding: 18px 48px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
