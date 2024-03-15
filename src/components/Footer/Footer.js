@@ -50,7 +50,7 @@ const Footer = () => {
                 <Link to='/locations'>Locations</Link>
               </li>
               <li>
-                <Link to='/contact'>Contact</Link>
+                <Link to='/contact-us'>Contact</Link>
               </li>
             </ul>
           </nav>
