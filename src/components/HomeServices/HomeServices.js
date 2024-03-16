@@ -30,7 +30,7 @@ const HomeServices = () => {
   `);
 
   return (
-    <section className={homeServices}>
+    <section className={homeServices} id='services'>
       {data.allServicesJson.edges.map((item) => {
         const service = item.node;
         return (
