@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 36px 24px;
+  padding: 35px 24px 34px;
 }
 
 .header-mobile .header-mobile-logo {
@@ -18,7 +18,7 @@
 
 .header-mobile .header-mobile-nav {
   position: fixed;
-  top: 99px;
+  top: 96px;
   left: 0;
   width: 100%;
   height: 100%;
