@@ -15,10 +15,6 @@ const HeaderMobile = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const location = useLocation();
 
-  const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
-  };
-
   const closeNav = () => {
     setIsNavOpen(false);
   };
