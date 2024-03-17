@@ -43,3 +43,25 @@
   align-items: center;
   gap: 16px;
 }
+
+@media (min-width: 768px) {
+  .home-services {
+    padding: 0px 40px;
+  }
+
+  .home-services .home-services-service {
+    gap: 24px;
+    padding: 54px 0;
+  }
+
+  .home-services .home-services-service h2 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 2px;
+  }
+
+  .home-services .home-services-service a {
+    gap: 20px;
+  }
+}

@@ -65,3 +65,31 @@
   height: 573px;
   filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.5));
 }
+
+@media (min-width: 768px) {
+  .home-hero {
+    padding: 0 40px;
+  }
+
+  .home-hero .home-hero-container {
+    padding: 60px 56px 457px;
+    gap: 20px;
+    background-position: right -170px center;
+    border-radius: 15px;
+  }
+
+  .home-hero .home-hero-content {
+    gap: 16px;
+  }
+
+  .home-hero .home-hero-content h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .home-hero .home-hero-content p {
+    width: 77.26%;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
