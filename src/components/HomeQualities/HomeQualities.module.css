@@ -13,6 +13,16 @@
   gap: 48px;
 }
 
+.home-qualities .home-qualities-quality-illustration {
+  min-width: 202px;
+  min-height: 202px;
+}
+
+.home-qualities .home-qualities-quality-illustration img {
+  width: 100%;
+  height: 100%;
+}
+
 .home-qualities .home-qualities-quality-content {
   display: flex;
   flex-direction: column;
@@ -37,4 +47,29 @@
   letter-spacing: 0;
   color: var(--dark-grey);
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .home-qualities {
+    padding: 0 40px;
+    margin-bottom: 67px;
+    gap: 32px;
+  }
+
+  .home-qualities .home-qualities-quality {
+    flex-direction: row;
+  }
+
+  .home-qualities .home-qualities-quality-content {
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .home-qualities .home-qualities-quality-content h2 {
+    text-align: left;
+  }
+
+  .home-qualities .home-qualities-quality-content p {
+    text-align: left;
+  }
 }

@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import {
   homeQualities,
   homeQualitiesQuality,
+  homeQualitiesQualityIllustration,
   homeQualitiesQualityContent,
 } from './HomeQualities.module.css';
 
@@ -30,7 +31,7 @@ const HomeQualities = () => {
         const quality = item.node;
         return (
           <div className={homeQualitiesQuality} key={quality.id}>
-            <div>
+            <div className={homeQualitiesQualityIllustration}>
               <img
                 src={quality.image.publicURL}
                 alt={`${quality.title} illustration`}
