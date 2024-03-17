@@ -1,8 +1,8 @@
 .header {
   padding: 40px 64px;
-  display: flex;
   align-items: center;
   justify-content: space-between;
+  display: none;
 }
 
 .header .header-logo {
@@ -26,4 +26,10 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--dark-grey);
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+  }
 }
