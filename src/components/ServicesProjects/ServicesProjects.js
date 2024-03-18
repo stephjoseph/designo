@@ -14,13 +14,12 @@ const ServicesProjects = ({ data }) => {
         const image = getImage(project.image);
         return (
           <div key={project.title + i} className={servicesProjectsProject}>
-            <div>
-              <GatsbyImage
-                image={image}
-                alt={project.title}
-                className={servicesProjectsProjectImage}
-              />
-            </div>
+            <GatsbyImage
+              image={image}
+              alt={project.title}
+              className={servicesProjectsProjectImage}
+            />
+
             <div className={servicesProjectsProjectContent}>
               <h2>{project.title}</h2>
               <p>{project.description}</p>
