@@ -28,3 +28,24 @@
   color: var(--white);
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .services-hero {
+    margin: 0 40px;
+    border-radius: 15px;
+    padding: 64px 0px;
+    background-image: url('../../images/shared/tablet/bg-pattern-design-pages-intro-tablet.svg');
+    background-position: center left -21px;
+  }
+
+  .services-hero h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .services-hero p {
+    font-size: 16px;
+    line-height: 26px;
+    width: 59%;
+  }
+}
