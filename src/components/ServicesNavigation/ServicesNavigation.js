@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import {
@@ -7,6 +7,8 @@ import {
 } from './ServicesNavigation.module.css';
 
 const ServicesNavigation = ({ id }) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
   const data = useStaticQuery(graphql`
     query {
       allServicesJson {
@@ -32,17 +34,36 @@ const ServicesNavigation = ({ id }) => {
     }
   `);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <section className={servicesNavigation}>
       {data.allServicesJson.edges
         .filter((item) => item.node.id !== id)
         .map((item) => {
           const service = item.node;
+          let backgroundImageURL = service.image.mobile.publicURL;
+
+          if (windowWidth >= 768 && windowWidth < 1280) {
+            backgroundImageURL = service.image.tablet.publicURL;
+          } else if (windowWidth >= 1280) {
+            backgroundImageURL = service.image.desktop.publicURL;
+          }
           return (
             <div
               key={service.id}
               style={{
-                backgroundImage: `url(${service.image.mobile.publicURL})`,
+                backgroundImage: `url(${backgroundImageURL})`,
               }}
               className={servicesNavigationService}
             >

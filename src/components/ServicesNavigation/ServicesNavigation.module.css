@@ -43,3 +43,24 @@
   align-items: center;
   gap: 16px;
 }
+
+@media (min-width: 768px) {
+  .services-navigation {
+    padding: 0px 40px;
+    margin-bottom: 120px;
+  }
+
+  .services-navigation .services-navigation-service {
+    gap: 24px;
+    padding: 54px 0;
+  }
+
+  .services-navigation .services-navigation-service h2 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 2px;
+  }
+  .services-navigation .services-navigation-service a {
+    gap: 20px;
+  }
+}
