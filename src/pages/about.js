@@ -27,19 +27,13 @@ export const query = graphql`
         description
         image {
           desktop {
-            childImageSharp {
-              gatsbyImageData
-            }
+            publicURL
           }
           mobile {
-            childImageSharp {
-              gatsbyImageData
-            }
+            publicURL
           }
           tablet {
-            childImageSharp {
-              gatsbyImageData
-            }
+            publicURL
           }
         }
       }
@@ -48,19 +42,13 @@ export const query = graphql`
         title
         image {
           desktop {
-            childImageSharp {
-              gatsbyImageData
-            }
+            publicURL
           }
           mobile {
-            childImageSharp {
-              gatsbyImageData
-            }
+            publicURL
           }
           tablet {
-            childImageSharp {
-              gatsbyImageData
-            }
+            publicURL
           }
         }
       }

@@ -1,5 +1,4 @@
-import React from 'react';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import React, { useState, useEffect } from 'react';
 import {
   aboutSubhero,
   aboutSubheroImage,
@@ -7,15 +6,29 @@ import {
 } from './AboutSubhero.module.css';
 
 const AboutSubHero = ({ data }) => {
-  const imageMobile = getImage(data.image.mobile);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const subHeroImage =
+    windowWidth >= 1280
+      ? data.image.desktop.publicURL
+      : windowWidth >= 768
+      ? data.image.tablet.publicURL
+      : data.image.mobile.publicURL;
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <section className={aboutSubhero}>
-      <GatsbyImage
-        image={imageMobile}
-        alt='people working together with their laptops on a table'
-        className={aboutSubheroImage}
-      />
-
+      <img src={subHeroImage} alt='' className={aboutSubheroImage} />
       <div className={aboutSubheroContent}>
         <h1>{data.title}</h1>
         <p

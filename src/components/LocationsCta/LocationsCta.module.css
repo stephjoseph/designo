@@ -44,3 +44,9 @@
   border-radius: 8px;
   text-decoration: none;
 }
+
+@media (min-width: 768px) {
+  .locations-cta {
+    gap: 80px;
+  }
+}
