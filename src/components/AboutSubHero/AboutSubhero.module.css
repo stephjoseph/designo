@@ -1,7 +1,6 @@
 .about-subhero {
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
   margin-bottom: 120px;
 }
@@ -40,4 +39,28 @@
   letter-spacing: 0;
   color: var(--dark-grey);
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .about-subhero {
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .about-subhero .about-subhero-content {
+    background-position: top -212px right 12px;
+    padding: 64px 56px;
+  }
+
+  .about-subhero .about-subhero-content h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .about-subhero .about-subhero-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
