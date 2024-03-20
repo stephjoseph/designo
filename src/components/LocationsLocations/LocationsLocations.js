@@ -5,7 +5,8 @@ import { Icon } from 'leaflet';
 import {
   locationsLocations,
   locationsLocationsLocation,
-  locationsLocationsContent,
+  locationsLocationsLocationMap,
+  locationsLocationsLocationContent,
 } from './LocationsLocations.module.css';
 
 const LocationsLocations = () => {
@@ -43,22 +44,25 @@ const LocationsLocations = () => {
           className={locationsLocationsLocation}
           id={item.country}
         >
-          <MapContainer
-            style={{ height: '326px' }}
-            center={[item.lat, item.long]}
-            zoom={5}
-            zoomControl={false}
-          >
-            <TileLayer
-              minZoom={0}
-              maxZoom={20}
-              maxNativeZoom={19}
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-            />
-            <Marker position={[item.lat, item.long]} icon={locationIcon} />
-          </MapContainer>
-          <div className={locationsLocationsContent}>
+          <div className={locationsLocationsLocationMap}>
+            <MapContainer
+              style={{ height: '326px' }}
+              center={[item.lat, item.long]}
+              zoom={5}
+              zoomControl={false}
+            >
+              <TileLayer
+                minZoom={0}
+                maxZoom={20}
+                maxNativeZoom={19}
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+              />
+              <Marker position={[item.lat, item.long]} icon={locationIcon} />
+            </MapContainer>
+          </div>
+
+          <div className={locationsLocationsLocationContent}>
             <h2>{item.country}</h2>
             <address>
               <div>
