@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   gap: 48px;
   background-color: var(--peach);
   background-image: url('../../images/contact/mobile/bg-pattern-hero-contact-mobile.svg');
@@ -55,13 +54,13 @@
 }
 
 .contact-us-form .contact-us-form-form input:focus,
-textarea:focus,
-button:focus {
+.contact-us-form .contact-us-form-form textarea:focus,
+.contact-us-form .contact-us-form-form button:focus {
   outline: 0;
 }
 
 .contact-us-form .contact-us-form-form input,
-textarea {
+.contact-us-form .contact-us-form-form textarea {
   border: 0;
   border-bottom: 1px solid var(--white);
   background: 0;
@@ -74,7 +73,7 @@ textarea {
 }
 
 .contact-us-form .contact-us-form-form input::placeholder,
-textarea::placeholder {
+.contact-us-form .contact-us-form-form textarea::placeholder {
   opacity: 0.5;
 }
 
@@ -91,4 +90,44 @@ textarea::placeholder {
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .contact-us-form {
+    padding: 72px 56px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 15px;
+    align-items: flex-start;
+    background-image: url('../../images/contact/desktop/bg-pattern-hero-desktop.svg');
+    background-size: 640px 640px;
+    background-position: top -83px left -121px;
+  }
+
+  .contact-us-form .contact-us-form-content {
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .contact-us-form .contact-us-form-content h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .contact-us-form .contact-us-form-content p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  .contact-us-form .contact-us-form-form {
+    align-items: flex-end;
+    gap: 24px;
+  }
+
+  .contact-us-form .contact-us-form-form input,
+  .contact-us-form .contact-us-form-form textarea {
+    padding: 0 0 12px 24px;
+    font-weight: 500;
+  }
 }
