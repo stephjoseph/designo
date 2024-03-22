@@ -244,3 +244,15 @@
     text-align: left;
   }
 }
+
+@media (min-width: 1280px) {
+  .cta {
+    margin-left: 165px;
+    margin-right: 165px;
+  }
+
+  .footer {
+    padding: 144px 165px 72px;
+    margin-top: -72px;
+  }
+}
