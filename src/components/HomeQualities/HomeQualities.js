@@ -5,6 +5,7 @@ import {
   homeQualitiesQuality,
   homeQualitiesQualityIllustration,
   homeQualitiesQualityContent,
+  homeQualitiesBgPattern,
 } from './HomeQualities.module.css';
 
 const HomeQualities = () => {
@@ -44,6 +45,7 @@ const HomeQualities = () => {
           </div>
         );
       })}
+      <div className={homeQualitiesBgPattern}></div>
     </section>
   );
 };
