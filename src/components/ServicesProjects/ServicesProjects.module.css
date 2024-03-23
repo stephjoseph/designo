@@ -66,3 +66,27 @@
     padding: 0 32px;
   }
 }
+
+@media (min-width: 1280px) {
+  .services-projects {
+    padding: 160px 165px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 30px;
+    row-gap: 32px;
+  }
+
+  .services-projects .services-projects-project {
+    flex-direction: column;
+  }
+
+  .services-projects .services-projects-project-image {
+    width: 100%;
+  }
+
+  .services-projects .services-projects-project-content {
+    width: 100%;
+    padding: 32px;
+    gap: 16px;
+  }
+}

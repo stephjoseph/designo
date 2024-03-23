@@ -49,3 +49,11 @@
     width: 59%;
   }
 }
+
+@media (min-width: 1280px) {
+  .services-hero {
+    margin: 0 165px;
+    padding: 64px 190px;
+    background-position: center right;
+  }
+}
