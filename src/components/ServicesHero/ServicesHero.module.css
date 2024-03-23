@@ -9,6 +9,11 @@
   background-size: 876px 584px;
   background-position: top right;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.services-hero-bg-pattern {
+  display: none;
 }
 
 .services-hero h1 {
@@ -55,5 +60,19 @@
     margin: 0 165px;
     padding: 64px 190px;
     background-position: center right;
+  }
+
+  .services-hero-bg-pattern {
+    width: 1006px;
+    height: 594px;
+    display: block;
+    position: absolute;
+    background-image: url('../../images/shared/desktop/bg-pattern-leaf.svg');
+    background-repeat: no-repeat;
+    background-size: 1006px 594px;
+    pointer-events: none;
+    top: 126px;
+    left: -165px;
+    z-index: -1;
   }
 }
