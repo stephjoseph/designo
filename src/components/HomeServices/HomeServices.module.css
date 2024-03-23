@@ -47,6 +47,7 @@
 @media (min-width: 768px) {
   .home-services {
     padding: 0px 40px;
+    margin-bottom: 160px;
   }
 
   .home-services .home-services-service {
