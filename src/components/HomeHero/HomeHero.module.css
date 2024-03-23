@@ -97,6 +97,7 @@
 @media (min-width: 1280px) {
   .home-hero {
     padding: 0 165px;
+    margin-bottom: 160px;
   }
 
   .home-hero .home-hero-container {
