@@ -64,3 +64,15 @@
     gap: 20px;
   }
 }
+
+@media (min-width: 768px) {
+  .services-navigation {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0px 165px;
+    margin-bottom: 160px;
+  }
+
+  .services-navigation .services-navigation-service {
+    padding: 107px 0;
+  }
+}
