@@ -11,9 +11,12 @@ const About = ({ data }) => {
     <Layout>
       <main>
         <AboutHero data={data.aboutJson.hero} />
-        <AboutSubHero data={data.aboutJson.subhero[0]} />
-        <LocationsCta />
-        <AboutSubHero data={data.aboutJson.subhero[1]} />
+        {data.aboutJson.subhero.map((item, index) => (
+          <React.Fragment key={index}>
+            <AboutSubHero data={item} index={index} />
+            {index === 0 && <LocationsCta />}
+          </React.Fragment>
+        ))}
       </main>
     </Layout>
   );

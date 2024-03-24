@@ -64,3 +64,32 @@
     line-height: 26px;
   }
 }
+
+@media (min-width: 1280px) {
+  .about-subhero {
+    margin: 0 165px 160px;
+    align-items: stretch;
+  }
+
+  .about-subhero .about-subhero-image {
+    width: 42.88%;
+    height: 640px;
+    object-fit: cover;
+  }
+
+  .about-subhero .about-subhero-content {
+    width: 57.11%;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 96px;
+    background-position: bottom left -146px;
+  }
+
+  .about-subhero .about-subhero-content h1 {
+    text-align: left;
+  }
+
+  .about-subhero .about-subhero-content p {
+    text-align: left;
+  }
+}
