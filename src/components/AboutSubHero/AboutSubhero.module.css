@@ -73,7 +73,7 @@
 
   .about-subhero .about-subhero-image {
     width: 42.88%;
-    height: 640px;
+    min-height: 640px;
     object-fit: cover;
   }
 
@@ -81,7 +81,7 @@
     width: 57.11%;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 96px;
+    padding: 154px 96px;
     background-position: bottom left -146px;
   }
 
