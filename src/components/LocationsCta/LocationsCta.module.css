@@ -5,6 +5,11 @@
   align-items: center;
   gap: 48px;
   margin-bottom: 120px;
+  position: relative;
+}
+
+.locations-cta .locations-cta-bg-pattern {
+  display: none;
 }
 
 .locations-cta .locations-cta-country {
@@ -48,5 +53,33 @@
 @media (min-width: 768px) {
   .locations-cta {
     gap: 80px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .locations-cta {
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 165px;
+    margin-bottom: 160px;
+  }
+
+  .locations-cta .locations-cta-bg-pattern {
+    width: 1006px;
+    height: 594px;
+    display: block;
+    position: absolute;
+    background-image: url('../../images/shared/desktop/bg-pattern-leaf.svg');
+    background-repeat: no-repeat;
+    background-size: 1006px 594px;
+    pointer-events: none;
+    top: 182px;
+    right: -165px;
+    z-index: -1;
+  }
+
+  .locations-cta .locations-cta-country {
+    flex: 1;
   }
 }

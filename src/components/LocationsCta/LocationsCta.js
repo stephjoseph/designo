@@ -4,6 +4,7 @@ import {
   locationsCta,
   locationsCtaCountry,
   locationsCtaCountryContent,
+  locationsCtaBgPattern,
 } from './LocationsCta.module.css';
 
 const LocationsCta = () => {
@@ -37,6 +38,7 @@ const LocationsCta = () => {
           </div>
         </div>
       ))}
+      <div className={locationsCtaBgPattern}></div>
     </section>
   );
 };
