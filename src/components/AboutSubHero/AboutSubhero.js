@@ -5,7 +5,7 @@ import {
   aboutSubheroContent,
 } from './AboutSubhero.module.css';
 
-const AboutSubHero = ({ data }) => {
+const AboutSubHero = ({ data, index }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const subHeroImage =
@@ -26,8 +26,17 @@ const AboutSubHero = ({ data }) => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  const flexDirection =
+    windowWidth >= 1280 ? (index % 2 === 0 ? 'row' : 'row-reverse') : '';
+
   return (
-    <section className={aboutSubhero}>
+    <section
+      className={aboutSubhero}
+      style={{
+        flexDirection,
+      }}
+    >
       <img src={subHeroImage} alt='' className={aboutSubheroImage} />
       <div className={aboutSubheroContent}>
         <h1>{data.title}</h1>
