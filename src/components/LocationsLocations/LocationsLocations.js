@@ -46,7 +46,7 @@ const LocationsLocations = () => {
         >
           <div className={locationsLocationsLocationMap}>
             <MapContainer
-              style={{ height: '326px' }}
+              style={{ height: '100%' }}
               center={[item.lat, item.long]}
               zoom={5}
               zoomControl={false}
