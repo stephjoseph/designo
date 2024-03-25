@@ -124,3 +124,32 @@
     line-height: 26px;
   }
 }
+
+@media (min-width: 1280px) {
+  .locations-locations {
+    gap: 32px;
+    margin-left: 165px;
+    margin-right: 165px;
+  }
+
+  .locations-locations .locations-locations-location {
+    gap: 30px;
+  }
+
+  .locations-locations .locations-locations-location:nth-of-type(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .locations-locations .locations-locations-location:nth-of-type(even) {
+    flex-direction: row;
+  }
+
+  .locations-locations .locations-locations-location-map {
+    width: 31.53%;
+  }
+
+  .locations-locations .locations-locations-location-content {
+    width: 65.76%;
+    padding: 88px 96px;
+  }
+}
