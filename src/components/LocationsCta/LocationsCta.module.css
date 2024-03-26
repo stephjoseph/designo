@@ -48,6 +48,15 @@
   background: var(--peach);
   border-radius: 8px;
   text-decoration: none;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.locations-cta .locations-cta-country-content a:hover,
+.locations-cta .locations-cta-country-content a:active {
+  background: var(--light-peach);
 }
 
 @media (min-width: 768px) {
