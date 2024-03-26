@@ -4,7 +4,9 @@ import {
   contactUsFormContent,
   contactUsFormForm,
   contactUsFormFormInputs,
+  contactUsFormFormInputsInput,
 } from './ContactUsForm.module.css';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const ContactUsForm = () => {
   const [name, setName] = useState('');
@@ -19,23 +21,23 @@ const ContactUsForm = () => {
     const errors = {};
 
     if (!name.trim()) {
-      errors.name = 'Name is required';
+      errors.name = "Can't be empty";
     }
 
     if (!email.trim()) {
-      errors.email = 'Email is required';
+      errors.email = "Can't be empty";
     } else if (!/\S+@\S+\.\S+/.test(email)) {
       errors.email = 'Email is invalid';
     }
 
     if (!phone.trim()) {
-      errors.phone = 'Phone is required';
+      errors.phone = "Can't be empty";
     } else if (!/^\d{10}$/.test(phone)) {
       errors.phone = 'Phone number is invalid';
     }
 
     if (!message.trim()) {
-      errors.message = 'Message is required';
+      errors.message = "Can't be empty";
     }
 
     if (Object.keys(errors).length === 0) {
@@ -66,36 +68,76 @@ const ContactUsForm = () => {
       </div>
       <form onSubmit={handleSubmit} className={contactUsFormForm}>
         <div className={contactUsFormFormInputs}>
-          <input
-            type='text'
-            placeholder='Name'
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          {errors.name && <span className='error'>{errors.name}</span>}
-          <input
-            type='text'
-            placeholder='Email Address'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          {errors.email && <span className='error'>{errors.email}</span>}
-          <input
-            type='text'
-            placeholder='Phone'
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-          />
-          {errors.phone && <span className='error'>{errors.phone}</span>}
-          <textarea
-            name='message'
-            placeholder='Message'
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            cols='30'
-            rows='4'
-          ></textarea>
-          {errors.message && <span className='error'>{errors.message}</span>}
+          <div className={contactUsFormFormInputsInput}>
+            <input
+              type='text'
+              placeholder='Name'
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            {errors.name && (
+              <span className='error'>
+                {errors.name}
+                <StaticImage
+                  src='../../images/contact/desktop/icon-error.svg'
+                  alt='error icon'
+                />
+              </span>
+            )}
+          </div>
+          <div className={contactUsFormFormInputsInput}>
+            <input
+              type='text'
+              placeholder='Email Address'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            {errors.email && (
+              <span className='error'>
+                {errors.email}{' '}
+                <StaticImage
+                  src='../../images/contact/desktop/icon-error.svg'
+                  alt='error icon'
+                />
+              </span>
+            )}
+          </div>
+          <div className={contactUsFormFormInputsInput}>
+            <input
+              type='text'
+              placeholder='Phone'
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+            />
+            {errors.phone && (
+              <span className='error'>
+                {errors.phone}{' '}
+                <StaticImage
+                  src='../../images/contact/desktop/icon-error.svg'
+                  alt='error icon'
+                />
+              </span>
+            )}
+          </div>
+          <div className={contactUsFormFormInputsInput}>
+            <textarea
+              name='message'
+              placeholder='Message'
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              cols='30'
+              rows='4'
+            ></textarea>
+            {errors.message && (
+              <span className='error'>
+                {errors.message}{' '}
+                <StaticImage
+                  src='../../images/contact/desktop/icon-error.svg'
+                  alt='error icon'
+                />
+              </span>
+            )}
+          </div>
         </div>
         <button type='submit'>Submit</button>
       </form>
