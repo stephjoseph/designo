@@ -131,3 +131,23 @@
     font-weight: 500;
   }
 }
+
+@media (min-width: 1280px) {
+  .contact-us-form {
+    padding: 56px 96px;
+    margin: 0 165px 160px;
+    flex-direction: row;
+    align-items: center;
+    gap: 0px;
+    background-position: bottom left;
+  }
+
+  .contact-us-form .contact-us-form-content {
+    width: 58.82%;
+    padding-right: 96px;
+  }
+
+  .contact-us-form .contact-us-form-form {
+    width: 41.39%;
+  }
+}
