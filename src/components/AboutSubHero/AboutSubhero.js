@@ -6,7 +6,9 @@ import {
 } from './AboutSubhero.module.css';
 
 const AboutSubHero = ({ data, index }) => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== 'undefined' ? window.innerWidth : 0
+  );
 
   const subHeroImage =
     windowWidth >= 1280

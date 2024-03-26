@@ -7,7 +7,9 @@ import {
 } from './ServicesNavigation.module.css';
 
 const ServicesNavigation = ({ id }) => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== 'undefined' ? window.innerWidth : 0
+  );
 
   const data = useStaticQuery(graphql`
     query {
