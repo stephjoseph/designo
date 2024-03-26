@@ -8,6 +8,7 @@ import {
   locationsLocationsLocationMap,
   locationsLocationsLocationContent,
 } from './LocationsLocations.module.css';
+import mapPin from '../../images/locations/desktop/icon-map-pin.svg';
 
 const LocationsLocations = () => {
   const data = useStaticQuery(graphql`
@@ -31,7 +32,7 @@ const LocationsLocations = () => {
   const locationIcon =
     typeof window !== 'undefined'
       ? L.icon({
-          iconUrl: '/static/513a00c8981ba83374787695a553ab3b/icon-map-pin.svg',
+          iconUrl: mapPin,
           iconSize: [32, 40],
           iconAnchor: [16, 40],
         })
