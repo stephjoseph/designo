@@ -4,7 +4,9 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { homeServices, homeServicesService } from './HomeServices.module.css';
 
 const HomeServices = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== 'undefined' ? window.innerWidth : 0
+  );
 
   const data = useStaticQuery(graphql`
     query {

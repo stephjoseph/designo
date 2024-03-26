@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
-import { Icon } from 'leaflet';
+import L from 'leaflet';
 import {
   locationsLocations,
   locationsLocationsLocation,
@@ -28,11 +28,14 @@ const LocationsLocations = () => {
     }
   `);
 
-  const locationIcon = new Icon({
-    iconUrl: '/static/513a00c8981ba83374787695a553ab3b/icon-map-pin.svg',
-    iconSize: [32, 40],
-    iconAnchor: [16, 40],
-  });
+  const locationIcon =
+    typeof window !== 'undefined'
+      ? L.icon({
+          iconUrl: '/static/513a00c8981ba83374787695a553ab3b/icon-map-pin.svg',
+          iconSize: [32, 40],
+          iconAnchor: [16, 40],
+        })
+      : null;
 
   return (
     <section className={locationsLocations}>
@@ -58,7 +61,10 @@ const LocationsLocations = () => {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
               />
-              <Marker position={[item.lat, item.long]} icon={locationIcon} />
+              <Marker
+                position={[item.lat, item.long]}
+                icon={!!locationIcon ? locationIcon : null}
+              />
             </MapContainer>
           </div>
 
