@@ -28,6 +28,12 @@
   color: var(--dark-grey);
 }
 
+.header .header-nav ul li a:hover,
+.header .header-nav ul li a:active {
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+}
+
 @media (min-width: 768px) {
   .header {
     display: flex;
