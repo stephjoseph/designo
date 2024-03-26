@@ -20,6 +20,28 @@
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   border-radius: 15px;
+  position: relative;
+}
+
+.home-services .home-services-service::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--peach);
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.home-services .home-services-service:hover::before {
+  opacity: 0.8;
+}
+
+.home-services .home-services-service:hover {
+  background-color: #f4f4f4;
 }
 
 .home-services .home-services-service h2 {
@@ -29,6 +51,7 @@
   letter-spacing: 1.4px;
   color: var(--white);
   text-transform: uppercase;
+  z-index: 1;
 }
 
 .home-services .home-services-service a {
@@ -42,6 +65,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
