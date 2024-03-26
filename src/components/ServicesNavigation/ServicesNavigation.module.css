@@ -51,6 +51,7 @@
   letter-spacing: 1.4px;
   color: var(--white);
   text-transform: uppercase;
+  z-index: 1;
 }
 
 .services-navigation .services-navigation-service a {
@@ -64,6 +65,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
