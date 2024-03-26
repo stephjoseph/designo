@@ -27,7 +27,7 @@ const Footer = () => {
               how our expertise can help your business grow.
             </p>
           </div>
-          <Link className={ctaButton} to='/contact'>
+          <Link className={ctaButton} to='/contact-us'>
             Get in touch
           </Link>
         </div>
